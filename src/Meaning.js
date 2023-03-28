@@ -3,10 +3,12 @@ import React from "react";
 export default function Meaning(props) {
   console.log("meaning props", props);
   return (
-    <div className="Meaning">
-      <h3>POS: {props.meaning.partOfSpeech}</h3>
-      <p>Def: {props.meaning.definition}</p>
-      <p>Example: {props.meaning.example || "no example"}</p>
-    </div>
+    <li className="Meaning">
+      <h4 className="d-inline">{props.meaning.partOfSpeech}</h4>
+      <p>{props.meaning.definition}</p>
+      {props.meaning.example ? (
+        <p className="text-secondary">"{props.meaning.example}"</p>
+      ) : null}
+    </li>
   );
 }

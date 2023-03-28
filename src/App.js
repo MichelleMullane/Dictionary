@@ -9,7 +9,16 @@ function App() {
         <Dictionary />
       </main>
       <footer className="App-footer">
-        <small>Coded by Michelle Mullane</small>
+        <small>
+          Coded by{" "}
+          <a
+            href="https://github.com/MichelleMullane"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Michelle Mullane
+          </a>
+        </small>
       </footer>
     </div>
   );
