@@ -6,11 +6,23 @@ export default function Meaning(props) {
   return (
     <li className="Meaning">
       <h4 className="d-inline">{props.meaning.partOfSpeech}</h4>
-      <p>{props.meaning.definition}</p>
+      <p>
+        {" "}
+        <strong>Definition: </strong> {props.meaning.definition}
+      </p>
       {props.meaning.example ? (
-        <p className="text-secondary">"{props.meaning.example}"</p>
+        <p>
+          {" "}
+          <strong>Example: </strong>{" "}
+          <em className="text-secondary">"{props.meaning.example}"</em>
+        </p>
       ) : null}
-      <Synonyms synonyms={props.meaning.synonyms} />
+      {props.meaning.synonyms ? (
+        <div>
+          <strong>Synonym(s): </strong>
+          <Synonyms synonyms={props.meaning.synonyms} />
+        </div>
+      ) : null}
     </li>
   );
 }
