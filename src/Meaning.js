@@ -3,7 +3,6 @@ import Synonyms from "./Synonyms";
 import "./Meaning.css";
 
 export default function Meaning(props) {
-  console.log("meaning props", props);
   return (
     <li className="Meaning mt-3">
       <h4 className="d-inline">{props.meaning.partOfSpeech}</h4>
