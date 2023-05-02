@@ -1,6 +1,19 @@
-/* .App {
+body {
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+a {
+  color: #57c3f5;
+}
+
+.App {
+  margin: 0 30px;
+}
+
+.App-header {
+  margin: 30px 0;
   text-align: center;
-} */
+}
 
 .App-footer {
   margin: 30px 0;

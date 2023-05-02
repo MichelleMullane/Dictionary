@@ -1,3 +1,10 @@
 .Results-meanings {
   list-style-position: inside;
+  padding: 0;
+}
+
+.Results h2 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.5;
 }

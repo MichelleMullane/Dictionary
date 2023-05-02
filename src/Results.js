@@ -3,21 +3,21 @@ import Meaning from "./Meaning";
 import "./Results.css";
 
 export default function Results(props) {
-  console.log("Results props", props.results);
   if (props.results) {
     return (
-      <div className="Results">
-        <h2>
-          {props.results.word}{" "}
-          <small className="text-secondary">{props.results.phonetic}</small>
-        </h2>
-
+      <div className="Results mt-2">
+        <section>
+          <h2>
+            {props.results.word}{" "}
+            <small className="text-secondary">{props.results.phonetic}</small>
+          </h2>
+        </section>
         <ol className="Results-meanings">
           {props.results.meanings.map(function (meaning, index) {
             return (
-              <div key={index}>
+              <section key={index}>
                 <Meaning meaning={meaning} />
-              </div>
+              </section>
             );
           })}
         </ol>
