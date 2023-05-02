@@ -1,6 +1,7 @@
 .Results-meanings {
   list-style-position: inside;
   padding: 0;
+  list-style: none;
 }
 
 .Results h2 {

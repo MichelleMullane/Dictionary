@@ -12,7 +12,7 @@ export default function Results(props) {
             <small className="text-secondary">{props.results.phonetic}</small>
           </h2>
         </section>
-        <ol className="Results-meanings">
+        <ul className="Results-meanings">
           {props.results.meanings.map(function (meaning, index) {
             return (
               <section key={index}>
@@ -20,7 +20,7 @@ export default function Results(props) {
               </section>
             );
           })}
-        </ol>
+        </ul>
       </div>
     );
   } else {

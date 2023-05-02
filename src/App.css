@@ -2,8 +2,14 @@ body {
   background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
-a {
-  color: #57c3f5;
+.App header {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.App a {
+  color: #248cbd;
 }
 
 .App {
